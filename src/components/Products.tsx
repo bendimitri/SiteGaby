@@ -18,9 +18,6 @@ function ProductCard({ product, index }: { product: Product; index: number }) {
           alt={product.name}
           className="h-full w-full object-contain p-2 transition-transform duration-500 group-hover:scale-[1.02]"
         />
-        <span className="absolute left-3 top-3 rounded-full bg-white/90 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-wider text-violet shadow-sm">
-          {product.tag}
-        </span>
       </div>
 
       <div className="flex flex-1 flex-col p-4">
@@ -54,19 +51,6 @@ function ProductCard({ product, index }: { product: Product; index: number }) {
 export default function Products() {
   return (
     <section className="mt-12 lg:mt-0">
-      <motion.div
-        className="mb-5"
-        initial={{ opacity: 0, y: 12 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.4 }}
-      >
-        <h2 className="font-display text-xl font-semibold text-ink sm:text-2xl">
-          Produtos da live
-        </h2>
-        <p className="mt-1 text-sm text-mute">toca pra abrir</p>
-      </motion.div>
-
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-3">
         {products.map((product, index) => (
           <ProductCard key={product.id} product={product} index={index} />
