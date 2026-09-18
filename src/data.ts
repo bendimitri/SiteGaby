@@ -1,3 +1,5 @@
+import { asset } from './assets'
+
 export type Social = {
   id: string
   label: string
@@ -19,7 +21,7 @@ export const profile = {
   handle: '@https.user.gaby',
   title: 'links da live',
   bio: 'Produtos que eu uso em live!\nOs links estão todos aqui. 💜',
-  avatar: './avatar-gaby.jpg',
+  avatar: asset('avatar-gaby.jpg'),
 }
 
 /** Troca estes links pelos teus perfis reais. */
@@ -38,7 +40,7 @@ export const products: Product[] = [
     name: 'Paleta Athena UCANBE',
     blurb: 'Paleta de pintura facial com 20 cores.',
     tag: 'Makeup',
-    image: './produto-paleta.png',
+    image: asset('produto-paleta.png'),
     href: 'https://s.shopee.com.br/6q0oiA3BBb',
   },
   {
@@ -46,7 +48,7 @@ export const products: Product[] = [
     name: 'Cílios postiços manga',
     blurb: 'Kit com 5 pares, estilo spiky.',
     tag: 'Cílios',
-    image: './produto-cilios.png',
+    image: asset('produto-cilios.png'),
     href: 'https://s.shopee.com.br/9V1Zt7MotZ',
   },
   {
@@ -54,7 +56,7 @@ export const products: Product[] = [
     name: 'Lentes Black Plus',
     blurb: 'Lente de contato 16.0 mm · 6 meses.',
     tag: 'Lentes',
-    image: './produto-lentes.png',
+    image: asset('produto-lentes.png'),
     href: 'https://s.shopee.com.br/2VrpYJuVwH',
   },
 ]

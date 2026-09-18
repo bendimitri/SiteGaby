@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { motion, useReducedMotion } from 'motion/react'
+import { asset } from '../assets'
 import { profile } from '../data'
 
 const STORAGE_KEY = 'gaby-splash-v2'
@@ -57,7 +58,7 @@ export default function Splash({ onDone }: SplashProps) {
       }}
     >
       <img
-        src="./splash-gaby.jpg"
+        src={asset('splash-gaby.jpg')}
         alt=""
         className="absolute inset-0 h-full w-full object-cover object-top opacity-90"
       />
