@@ -41,7 +41,7 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "Atualiza build do GitHub Pages (docs/)"
-          file_pattern: docs/
+          file_pattern: 'docs/**'
 
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v4
