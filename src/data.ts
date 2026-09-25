@@ -47,4 +47,18 @@ export const products: Product[] = [
     image: asset('produto-kit-lentes.png'),
     href: 'https://s.shopee.com.br/4qFkOASkqj',
   },
+  {
+    id: 'kit-pinceis',
+    name: 'Kit pincéis Ana Biju',
+    blurb: 'Pincéis, esponjas e puff triangular.',
+    image: asset('produto-kit-pinceis.png'),
+    href: 'https://s.shopee.com.br/7fa5FWMbrU',
+  },
+  {
+    id: 'lentes-white',
+    name: 'Lentes Pure White',
+    blurb: 'Lente colorida 14.5 mm · uso anual.',
+    image: asset('produto-lentes-white.png'),
+    href: 'https://s.shopee.com.br/8V9CFLyYxc',
+  },
 ]
